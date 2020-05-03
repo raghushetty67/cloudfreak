@@ -15,6 +15,8 @@ pipeline {
                 sh label: '', script: 'export M2_HOME=/home/ubuntu/apache-maven-3.6.3'
                 sh label: '', script: 'export PATH=$M2_HOME/bin:$PATH'
                 sh label: '', script: 'export PATH'
+		sh 'mvn --version'
+
                 
             }
         }
