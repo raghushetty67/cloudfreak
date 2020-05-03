@@ -21,7 +21,7 @@ pipeline {
         stage('Build docker image') {
            steps {
                script {         
-                 def customImage = docker.build('saivikas/kubernetes', "./docker")
+                 def customImage = docker.build('saivikas408/kubernetes', "./docker")
                  docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                  customImage.push("${env.BUILD_NUMBER}")
                 }                     
