@@ -4,7 +4,7 @@ pipeline {
   stages{  
         stage('set Env') {
             steps { 
-                sh 'pwd
+                sh 'pwd'
 		sh 'mvn --version'
 
                 
